@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aaos-cli"
+version = "0.1.0"
+description = "AAOS workspace helper CLI for repo setup and manifest discovery."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "yusukeyusuke" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+aaos = "aaos_cli.cli:main"
+
